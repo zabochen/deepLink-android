@@ -21,5 +21,10 @@
         android:id="@+id/navigation_notifications"
         android:name="ua.ck.zabochen.android.deeplink.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_notifications">
+        <deepLink
+            android:id="@+id/deepLink"
+            android:autoVerify="true"
+            app:uri="taras.com/{id}" />
+    </fragment>
 </navigation>
